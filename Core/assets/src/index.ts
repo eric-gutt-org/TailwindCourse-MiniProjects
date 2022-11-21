@@ -1,2 +1,3 @@
-import './styles.css'
+import "./styles.css"
+
 console.log("Hello Blazor World!");
