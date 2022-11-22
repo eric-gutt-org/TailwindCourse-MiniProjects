@@ -1,0 +1,9 @@
+{
+    "name": "Name One",
+    "description": "Name One Description",
+    "size": 100,
+    "dataDetails": [
+        { "data": "Data One" },
+        { "data" :  "Data Two"}
+    ]
+}

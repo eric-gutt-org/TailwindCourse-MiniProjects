@@ -24,6 +24,7 @@ const config = {
       },
       {
         test: /\.css$/i,
+        include: path.resolve(__dirname, 'src'),
         use: [stylesHandler, "css-loader", "postcss-loader"],
       },
       {
