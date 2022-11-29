@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProjectDataCtx;
 
@@ -10,9 +11,11 @@ using ProjectDataCtx;
 namespace ProjectDataCtx.Migrations
 {
     [DbContext(typeof(EfDataCtx))]
-    partial class EfDataCtxModelSnapshot : ModelSnapshot
+    [Migration("20221129151425_Add ImageGallery")]
+    partial class AddImageGallery
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

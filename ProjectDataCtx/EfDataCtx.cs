@@ -26,6 +26,7 @@ namespace ProjectDataCtx
 
         public DbSet<ProductModal> ProductModals { get; set; }
 
+        public DbSet<ImageGallery> Images { get; set; }
         public string? ConnectionString { get; set; }
     }
 
@@ -36,6 +37,8 @@ namespace ProjectDataCtx
             ProjectData data
             )
         {
+            if (context.ProjectData.Any(p => p.ProjectDataId > 0)) return true;
+
             context.Add(data);
             var count = context.SaveChanges();
             return count > 0;

@@ -6,6 +6,10 @@ module.exports = {
     "../Features/**/*.razor"
   ],
   theme: {
+    fontFamily: {
+      sans: ['Mulish', 'sans-serif'],
+      mono: ['Rokkitt', 'monospace']
+    },
     extend: {},
   },
   plugins: [],

@@ -38,6 +38,6 @@
     }
 
     .active-nav-btn {
-        @apply text-slate-50 bg-gray-900 border-2 border-slate-100;
+        @apply text-slate-50 border-2 border-slate-100 active:bg-slate-900;
     }
 }
