@@ -1,3 +1,3 @@
 import "./styles.css"
 
-console.log("Hello Blazor World!");
+console.log("Hello World!");

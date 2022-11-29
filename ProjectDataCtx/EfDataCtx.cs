@@ -1,12 +1,11 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.Runtime.CompilerServices;
 
 namespace ProjectDataCtx
 {
     public class EfDataCtx : DbContext
     {
         public EfDataCtx(DbContextOptions<EfDataCtx> options)
-            :base(options)
+            : base(options)
         {
         }
 
@@ -24,6 +23,9 @@ namespace ProjectDataCtx
 
         public DbSet<ProjectData> ProjectData { get; set; }
         public DbSet<DataDetails> DataDetails { get; set; }
+
+        public DbSet<ProductModal> ProductModals { get; set; }
+
         public string? ConnectionString { get; set; }
     }
 
@@ -40,4 +42,3 @@ namespace ProjectDataCtx
         }
     }
 }
-

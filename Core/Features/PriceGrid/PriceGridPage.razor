@@ -17,8 +17,8 @@
                 <div class="bg-slate-700 rounded-2xl text-white">
                     <!-- upper container -->
                     <div class="p-8 mx-3 mt-3 rounded-t-xl bg-slate-800">
-                        <div class="text-center uppercase">@item.Name</div>
-                        <h2 class="mt-10 font-serif text-5xl text-center">@item.Size</h2>
+                        <div class="text-center uppercase">@(item.Name)</div>
+                        <h2 class="mt-10 font-serif text-5xl text-center">@(item.Size)GB</h2>
                         <h3 class="mt-2 text-center">@item.Description</h3>
                         <div class="flex justify-center">
                             <a href="pricegrid" class="inline-block px-10 py-3 my-6 text-center
@@ -77,10 +77,6 @@
 
             if (Context is not null && Context.ProjectData is not null)
             {
-                var qry = from p in Context.ProjectData
-
-                          select p;
-
 
                 ProjectDataList = await Context.ProjectData
                                 .Include(p => p.Details)

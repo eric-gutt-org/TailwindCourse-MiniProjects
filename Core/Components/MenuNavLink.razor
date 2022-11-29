@@ -1,0 +1,17 @@
+<NavLink 
+    class="nav-btn"
+    ActiveClass="active-nav-btn"
+    href="@Href"
+    Match=@LinkMatch
+    >@Name</NavLink>
+
+@code {
+    [Parameter]
+    public string? Name { get; set; }
+
+    [Parameter]
+    public string? Href { get; set; }
+
+    [Parameter]
+    public NavLinkMatch LinkMatch { get; set; } = NavLinkMatch.Prefix;
+}
